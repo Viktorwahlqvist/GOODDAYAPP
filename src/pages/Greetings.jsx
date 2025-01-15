@@ -1,4 +1,9 @@
+import GreetingsComp from "../components/Greetings/GreetingsComp";
 const Greetings = () => {
-  return;
+  return (
+    <>
+      <GreetingsComp />
+    </>
+  );
 };
 export default Greetings;

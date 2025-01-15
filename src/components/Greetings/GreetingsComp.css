@@ -1,0 +1,15 @@
+.name-text{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.input-text{
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+.input-text::placeholder{
+    font-size: 1rem;
+    opacity: 0.5;
+}
