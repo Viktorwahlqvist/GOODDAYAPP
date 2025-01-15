@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+// Universal button to display all languages
 import "./UniversalButton.css";
 const UniversalButton = ({ language, onClick }) => {
   return (

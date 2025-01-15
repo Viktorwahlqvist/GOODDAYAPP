@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./GreetingsComp.css";
 import { useLanguage } from "../LanguageContext/LanguageContext";
-
+/* Greeting component that checks the stored language using the useLanguage hook.
+   It then changes the language based on the language code, and also adjusts the greeting 
+   depending on the time of day (morning, afternoon, evening). An array of objects is used 
+   to find the correct greeting words for each language. */
 const GreetingsComp = () => {
   const { language } = useLanguage();
   const [name, setName] = useState("");
@@ -49,7 +52,9 @@ const GreetingsComp = () => {
 
     return greetingsByLanguage[languageCode]?.[timeOfDay];
   };
-
+  /* Accessing an array of objects using a language code for example 'sv').
+   The greeting is then determined based on the time of day, 
+   with conditional logic (if-else statements) to select the appropriate greeting. */
   const greetingsMessage = getGreetingMessage(language);
 
   return (
